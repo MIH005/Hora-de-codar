@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+</head>
+<body>
+    <script>
+        var opcao = parseInt(prompt("Digite uma opção para calcular: 1- Retangulo  2- Quadrado  3- Losangulo  4- Trapezio  5- Paralelogramo  6- Triangulo  7- Circulo"));
+
+        switch (opcao){
+            case 1:
+                var baseR = parseInt(prompt("Digite valor da base do retângulo: "));
+                var alturaR = parseInt(prompt("Digite valor da altura do retângulo: "));
+
+                var area_retangulo = baseR * alturaR;
+                alert(area_retangulo);
+                break;
+            
+        case 2:
+            var lado_quadrado = parseInt(prompt("Digite o valor do lado do quadrado: "));
+
+            var area_quadrado = lado_quadrado * lado_quadrado;
+            alert(area_quadrado);
+            break;
+            
+        case 3: 
+            var diagonalMA = parseInt(prompt("Digite o valor do maior lado do losango"));
+            var diagonalME = parseInt(prompt("Digite o valor da diagonal menor do losango"));
+
+            var area_losango = (diagonalMA * diagonalME) / 2;
+            alert(area_losango);
+            break;
+        
+        case 4:
+            var baseMA = parseInt(prompt("Digite o valor da base menor do trapézio: "));
+            var baseME = parseInt(prompt("DIgite o valor da bse menor do trapézio: "));
+            var alturaT = parseInt(prompt("Digite a altura do trapézio: "));
+
+            var area_trapezio = ((baseMA + baseME) * alturaT) / 2;
+            alert(area_trapezio);
+            break;
+        
+        case 5:
+                var base_paralelogramo = parseInt(prompt("Digite o valor da base do paralelogramo: "));
+                var altura_paralelogramo = parseInt(prompt("Digite o valor da altura do paralelogramo: "));
+
+                var area_paralelogramo = base_paralelogramo * altura_paralelogramo;
+                alert("Área do Paralelogramo: " + area_paralelogramo);
+                break;
+        
+        case 6: 
+            var base_triangulo = parseInt(prompt("Digite o valor da base do triângulo: "));
+            var altura_triangulo = parseInt(prompt("Digite o valor da altura do triangulo "));
+
+            var area_triangulo = (base_triangulo * altura_triangulo) / 2;
+            alert(area_triangulo);
+            break;
+
+        case 7:
+            var raio_circulo = parseInt(prompt("Digite o valor do raio do círculo: "));
+            var pi = 3.14;
+
+            var area_circulo = pi * raio_circulo ** 2;
+            alert(area_circulo);
+            break;
+        }
+            
+
+    </script>
+</body>
+</html>
